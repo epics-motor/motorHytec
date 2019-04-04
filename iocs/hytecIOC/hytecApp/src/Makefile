@@ -23,14 +23,15 @@ hytec_DBD += base.dbd
 hytec_DBD += asyn.dbd
 #endif
 hytec_DBD += motorSupport.dbd
-hytec_DBD += devHytec.dbd
+hytec_DBD += HytecMotorDriver.dbd
 
 # Add all the support libraries needed by this IOC
-hytec_LIBS += hytec
+hytec_LIBS += HytecMotor
 hytec_LIBS += motor
 #ifdef ASYN
 hytec_LIBS += asyn
 #endif
+hytec_LIBS += Ipac
 #ifdef SNCSEQ
 hytec_LIBS += seq pv
 #endif
