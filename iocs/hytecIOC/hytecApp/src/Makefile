@@ -5,6 +5,9 @@ include $(TOP)/configure/CONFIG
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 #=============================
 
+# The following are used for debugging messages.
+#!USR_CXXFLAGS += -DDEBUG
+
 #=============================
 # Build the IOC application
 
@@ -16,10 +19,21 @@ DBD += hytec.dbd
 hytec_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#hytec_DBD += xxx.dbd
+#ifdef ASYN
+hytec_DBD += asyn.dbd
+#endif
+hytec_DBD += motorSupport.dbd
+hytec_DBD += devHytec.dbd
 
 # Add all the support libraries needed by this IOC
-#hytec_LIBS += xxx
+hytec_LIBS += hytec
+hytec_LIBS += motor
+#ifdef ASYN
+hytec_LIBS += asyn
+#endif
+#ifdef SNCSEQ
+hytec_LIBS += seq pv
+#endif
 
 # hytec_registerRecordDeviceDriver.cpp derives from hytec.dbd
 hytec_SRCS += hytec_registerRecordDeviceDriver.cpp
