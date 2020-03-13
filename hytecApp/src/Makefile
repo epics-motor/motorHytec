@@ -11,7 +11,8 @@ LIBRARY_IOC += HytecMotor
 DBD += HytecMotorDriver.dbd
 
 # The following are compiled and added to the support library
-HytecMotor_SRCS += HytecMotorDriver.cpp
+HytecMotor_SRCS_vxWorks += HytecMotorDriver.cpp
+HytecMotor_SRCS_vxLinux += HytecMotorDriver.cpp
 
 INC += HytecMotorDriver.h
 
