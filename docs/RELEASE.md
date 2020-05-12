@@ -1,5 +1,19 @@
 # motorHytec Releases
 
+## __R1-0-1 (2020-05-12)__
+R1-0-1 is a release based on the master branch.  
+
+### Changes since R1-0
+
+#### New features
+* None
+
+#### Modifications to existing features
+* Pull request [#1](https://github.com/epics-motor/motorHytec/pull/2): Compile ``HytecMotorDriver.cpp`` only under Linux/vxWorks
+
+#### Bug fixes
+* Commit [b82e4a4](https://github.com/epics-motor/motorHytec/commit/b82e4a4bee64ac7b78f9affd9a15ffb0a2794f1e): Include ``$(MOTOR)/modules/RELEASE.$(EPICS_HOST_ARCH).local`` instead of ``$(MOTOR)/configure/RELEASE``
+
 ## __R1-0 (2019-04-18)__
 R1-0 is a release based on the master branch.  
 
