@@ -1,5 +1,19 @@
 # motorHytec Releases
 
+## __R1-0-2 (2020-05-14)__
+R1-0-2 is a release based on the master branch.  
+
+### Changes since R1-0-1
+
+#### New features
+* None
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Pull request [#4](https://github.com/epics-motor/motorHytec/pull/4): Only build the example IOC on Linux and VxWorks
+
 ## __R1-0-1 (2020-05-12)__
 R1-0-1 is a release based on the master branch.  
 
