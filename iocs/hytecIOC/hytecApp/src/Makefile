@@ -11,9 +11,11 @@ include $(TOP)/configure/CONFIG
 #=============================
 # Build the IOC application
 
-PROD_IOC = hytec
+PROD_IOC_Linux = hytec
+PROD_IOC_vxWorks = hytec
 # hytec.dbd will be created and installed
-DBD += hytec.dbd
+DBD_Linux += hytec.dbd
+DBD_vxWorks += hytec.dbd
 
 # hytec.dbd will be made up from these files:
 hytec_DBD += base.dbd
