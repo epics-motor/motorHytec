@@ -1,6 +1,8 @@
 # motorHytec
 EPICS motor drivers for the following [Hytec](http://www.newwoodsolutions.co.uk) controllers: 8601 Industry Pack Stepper Controller
 
+[![Build Status](https://travis-ci.org/epics-motor/motorHytec.png)](https://travis-ci.org/epics-motor/motorHytec)
+
 motorHytec is a submodule of [motor](https://github.com/epics-modules/motor).  When motorHytec is built in the ``motor/modules`` directory, no manual configuration is needed.
 
 motorHytec can also be built outside of motor by copying it's ``EXAMPLE_RELEASE.local`` file to ``RELEASE.local`` and defining the paths to ``MOTOR`` and itself.
