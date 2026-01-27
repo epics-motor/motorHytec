@@ -1,5 +1,22 @@
 # motorHytec Releases
 
+## __R1-0-4 (2026-01-27)__
+R1-0-4 is a release based on the master branch.
+
+### Changes since R1-0-3
+
+#### New features
+* None
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Pull request [#6](https://github.com/epics-motor/motorHytec/pull/6): Only send positive velocities to the controller
+
+#### Continuous integration
+* Upgraded ci-scripts (v3.4.1)
+
 ## __R1-0-3 (2023-04-11)__
 R1-0-3 is a release based on the master branch.
 
